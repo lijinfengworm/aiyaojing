@@ -80,7 +80,7 @@ $db['default'] = array(
 	'password' => 'padding-bottom:4pxsolid#CCC111;',
 	'database' => 'yaojing',
 	'dbdriver' => 'mysqli',
-	'dbprefix' => 'yj',
+	'dbprefix' => 'yj_',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,

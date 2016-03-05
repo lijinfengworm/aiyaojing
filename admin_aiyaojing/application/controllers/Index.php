@@ -11,7 +11,7 @@ class Index extends MY_Controller{
         parent::__construct();
     }
     function index(){
-        
+
         $this->load->view('index/index');
     }
 }

@@ -53,7 +53,8 @@
  *
  * NOTE: If you change these, also change the error_reporting() code below
  */
-	define('ENVIRONMENT', isset($_SERVER['CI_ENV']) ? $_SERVER['CI_ENV'] : 'development');
+
+	define('ENVIRONMENT', $_SERVER['REMOTE_ADDR'] == '127.0.0.1' ? 'development' : 'production' );
 
 /*
  *---------------------------------------------------------------

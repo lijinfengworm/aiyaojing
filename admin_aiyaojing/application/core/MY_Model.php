@@ -7,8 +7,9 @@
  */
 
 class MY_Model extends CI_Model{
+    private $db;
     function __construct(){
         parent::__construct();
-        #$this->db = $this->load->database('default', true);
+        $this->db = $this->load->database('default', true);
     }
 }

@@ -7,5 +7,10 @@
  */
 
 class DataFormat {
-
+    static  function isPost() {
+        return ($_SERVER['REQUEST_METHOD'] == 'POST' ? 1 : 0);
+    }
+    static  function isGet(){
+        return $_SERVER['REQUEST_METHOD'] == 'GET' ? true : false;
+    }
 }

@@ -23,7 +23,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = '';
+$config['base_url'] = 'http://local.aiyaojing.com';
 
 /*
 |--------------------------------------------------------------------------
@@ -35,7 +35,7 @@ $config['base_url'] = '';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -511,3 +511,31 @@ $config['rewrite_short_tags'] = FALSE;
 | Array:		array('10.0.1.200', '192.168.5.0/24')
 */
 $config['proxy_ips'] = '';
+/*
+ * pagination
+ * 分页配置
+*/
+
+$config['pagination'] = array(
+    'total_rows' => 0,
+    'per_page' => 0,
+    'use_page_numbers' => TRUE,
+    'full_tag_open' => '<nav class="page"><ul class="pagination">',
+    'full_tag_close' => '</ul></nav>',
+    'cur_tag_open' => '<li class="active"><a>',
+    'cur_tag_close' => '</a></li>',
+    'num_links'     => 5,
+    'num_tag_open'  => '<li>',
+    'num_tag_close' => '</li>',
+    'prev_tag_open' => '<li>',
+    'prev_tag_close'=> '</li>',
+    'next_tag_open' => '<li>',
+    'next_tag_close'=> '</li>',
+    'first_link'    =>'首页',
+    'first_tag_open'=> '<li>',
+    'first_tag_close'=> '</li>',
+    'last_link'      => '尾页',
+    'last_tag_open' => '<li>',
+    'last_tag_open' => '</li>',
+    'uri_segment' => 5
+);

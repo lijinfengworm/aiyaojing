@@ -15,14 +15,14 @@ class Admin_User extends MY_Model{
         if(!$account || !$password) {
             return false;
         }
-        $user = $this->db->from(self::ADMIN_USER)->where(array('username' => $account, 'status' => 1))->get()->row_array();
+        $user = $this->db->from(self::ADMIN_USER)->where(array('user_name' => $account, 'status' => 1))->get()->row_array();
         if(empty($user)){
             return false;
         }
         if($user['password'] === md5($password)){
             $userData = array(
                 'uid'               => $user['id'],
-                'username'           => $user['username'],
+                'user_name'           => $user['user_name'],
             );
             $this->session->set_userdata($userData);
             $this->db->update(self::ADMIN_USER, array('last_login_ip'=>$this->input->ip_address(), 'last_login_time'=>time()), array('id'=> $user['id']));
@@ -53,4 +53,5 @@ class Admin_User extends MY_Model{
 
 
     }
+
 }

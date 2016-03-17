@@ -21,7 +21,7 @@
                     <div class="box-header with-border">
                         <h3 class="box-title"></h3>
                         <div class="box-tools">
-                            <a class="btn btn-default btn-block btn-sm">添加合集</a>
+                            <a href="/collect/add_collect" class="btn btn-default btn-block btn-sm">添加合集</a>
                         </div>
                     </div><!-- /.box-header -->
                     <div class="box-body">

@@ -202,14 +202,13 @@
 <div class="control-sidebar-bg"></div>
 </div>
 <!-- ./wrapper -->
-<!-- jQuery 2.1.4 -->
-<script src="<?=STATIC_PATH?>plugins/jQuery/jQuery-2.1.4.min.js"></script>
+
 <!-- jQuery UI 1.11.4 -->
-<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js" type="text/javascript"></script>
+<!--<script src="--><?//=STATIC_PATH?><!--plugins/jQueryUI/jquery-ui.min.js" type="text/javascript"></script>-->
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
-<script type="text/javascript">
+<!--<script type="text/javascript">
     $.widget.bridge('uibutton', $.ui.button);
-</script>
+</script>-->
 <!-- Bootstrap 3.3.2 JS -->
 <script src="<?=STATIC_PATH?>plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <!-- Morris.js charts -->

@@ -8,7 +8,7 @@ import threading
 from time import sleep,ctime
 from bs4 import BeautifulSoup
 
-dir = '/Users/worm/Public/Picture/'
+dir = '/home/li/Pictures/gather'
 
 def mk_dir(dir):
     if not os.path.isdir(dir):
@@ -55,7 +55,7 @@ def downjpg( filepath,FileName ="default.jpg" ):
         web = urllib2.urlopen(filepath)
         print("访问网络文件"+filepath+"\n")
         jpg = web.read()
-        DstDir="/Users/worm/Public/Picture/"
+        DstDir="/home/li/Pictures/gather"
         print("保存文件"+DstDir+FileName+"\n")
         try:
             File = open( DstDir+FileName,"wb" )

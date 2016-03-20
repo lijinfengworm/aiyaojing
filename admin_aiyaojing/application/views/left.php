@@ -1,4 +1,5 @@
 <?php $currentRouter =  '/'.$this->router->class.'/'.$this->router->method; ?>
+
 <!-- Left side column. contains the logo and sidebar -->
 <aside class="main-sidebar">
     <!-- sidebar: style can be found in sidebar.less -->
@@ -28,7 +29,8 @@
         <ul class="sidebar-menu">
 
             <?php foreach($tree as $val){ ?>
-                <li class="treeview <?php if($val['class'] == $this->router->class){echo 'active';} ?>">
+
+                <li class="treeview <?php if($val['class'] == $currentClass){echo 'active';} ?>">
                     <a href="#">
                         <i class="fa fa-laptop"></i>
                         <span><?=$val['name']?></span>
@@ -37,7 +39,7 @@
                     <ul class="treeview-menu">
                         <?php if($val['node']){ ?>
                             <?php foreach($val['node'] as $v){ ?>
-                                <li <?php if($currentRouter == $v['uri']){echo 'class="active"';} ?>><a href="<?=$v['uri']?>"><i class="fa fa-circle-o"></i> <?=$v['name']?></a></li>
+                                <li <?php if($currentMethod == $v['method'] && $val['class'] == $currentClass){echo 'class="active"';} ?>><a href="<?=$v['uri']?>"><i class="fa fa-circle-o"></i> <?=$v['name']?></a></li>
                             <?php } ?>
                         <?php } ?>
 

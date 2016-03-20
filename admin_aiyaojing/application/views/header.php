@@ -8,10 +8,10 @@
     <!-- Bootstrap 3.3.4 -->
     <link href="<?=STATIC_PATH;?>plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
     <!-- FontAwesome 4.3.0 -->
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet"
+    <link href="<?=STATIC_PATH?>css/font-awesome.min.css" rel="stylesheet"
           type="text/css"/>
     <!-- Ionicons 2.0.0 -->
-    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css"/>
+    <link href="<?=STATIC_PATH;?>css/ionicons.min.css" rel="stylesheet" type="text/css"/>
     <!-- Theme style -->
     <link href="<?=STATIC_PATH;?>css/AdminLTE.min.css" rel="stylesheet" type="text/css"/>
     <!-- AdminLTE Skins. Choose a skin from the css/skins
@@ -35,7 +35,8 @@
     <!--[if lt IE 9]>
     <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-
+    <!-- 先引用jquery -->
+    <script src="<?=STATIC_PATH?>plugins/jQuery/jQuery-2.1.4.min.js"></script>
 
     <![endif]-->
 </head>

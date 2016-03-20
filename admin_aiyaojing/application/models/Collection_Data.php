@@ -47,5 +47,27 @@ class Collection_Data extends MY_Model{
         }
         return $list;
     }
+    //插入和更新
+    function insertOrUpdateCollection($id, $title, $abstract, $cateID, $showTime, $uid){
+        $data = [
+            'title' => $title,
+            'abstract' => $abstract,
+            'cate_id' => $cateID,
+            'show_time' => strtotime($showTime),
+            'add_time' => time(),
+            'uid' =>$uid
+        ];
+        if($id){
+            return $this->db->update(self::COLLECT_TABLE, $data, [ 'id' => $id ]);
+        }else{
+            return $this->db->insert(self::COLLECT_TABLE, $data);
+        }
+    }
+    //根据ID获得合集详情
+    function getCollectionDetail($id){
+        $result = $this->db->from(self::COLLECT_TABLE)->where([ 'id' => $id ])->get()->row_array();
+
+        return $result;
+    }
 
 }

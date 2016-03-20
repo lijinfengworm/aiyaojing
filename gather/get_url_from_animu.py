@@ -2,18 +2,21 @@
 # coding=utf-8
 import re
 from bs4 import BeautifulSoup
-from common import get_html
+from common import get_request
 import threading
 domain = 'http://www.animu.ru/'
 imagesAddress = []
 def detail_url_list( html):
-    soup = BeautifulSoup(html)
-    urlList = []
-    list_url = soup.find_all(href=re.compile("^gallery(.*).html?"))
-    for val in list_url :
-        urlList.append(domain+val.get("href"))
+    if str(html).isdigit():
+        pass
+    else:
+        soup = BeautifulSoup(html)
+        urlList = []
+        list_url = soup.find_all(href=re.compile("^gallery(.*).html?"))
+        for val in list_url :
+            urlList.append(domain+val.get("href"))
 
-    return urlList
+        return urlList
 
 
 #截取字符串
@@ -26,16 +29,19 @@ def url_to_string(url):
 def get_image_address(url):
     newString = url_to_string(url)
 
-    image = get_html(url)
-    soup_image = BeautifulSoup(image)
-    address = []
+    image = get_request(url)
+    if str(image).isdigit():
+        pass
+    else:
+        soup_image = BeautifulSoup(image)
+        address = []
 
-    img = soup_image.findAll("a", {'target':'_blank'})
-    if len(img) :
-        for val in img:
-            address.append(val.get("href"))
-        for val in address:
-            imagesAddress.append(newString+val)
+        img = soup_image.findAll("a", {'target':'_blank'})
+        if len(img) :
+            for val in img:
+                address.append(val.get("href"))
+            for val in address:
+                imagesAddress.append(newString+val)
 
 
 def image_address(urlList):
@@ -54,7 +60,7 @@ def image_address(urlList):
 
 
 def returnUrlAddress():
-    html = get_html(domain)
+    html = get_request(domain)
     urlList = detail_url_list(html)
     image_address(urlList)
     return imagesAddress

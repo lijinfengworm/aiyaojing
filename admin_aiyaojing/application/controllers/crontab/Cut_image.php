@@ -17,7 +17,6 @@ class Cut_image extends CI_Controller{
         self::makeDir($this->baseDir.'small/');
 
     }
-
     const COLLECT_TABLE = 'collecting_data';
     const IMAGES_TABLE = 'images';
     function index(){
@@ -30,7 +29,7 @@ class Cut_image extends CI_Controller{
                 $tmpFile = $val['source'].$val['file_name'];
                 $newFileName = sha1($tmpFile).'.'.$extension;
                 $newImage = $this->baseDir.'original/'.$newFileName;
-                $oldImage = 'static/uploads/'.$val['file_name'];
+                $oldImage = 'static/tmp_uploads/'.$val['file_name'];
                 rename($oldImage, $newImage);
                 $this->cutImages($newFileName,$newImage, 'medium');
                 $this->cutImages($newFileName,$newImage, 'small');

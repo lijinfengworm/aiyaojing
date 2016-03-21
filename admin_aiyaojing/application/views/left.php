@@ -37,7 +37,7 @@
                         <i class="fa fa-angle-left pull-right"></i>
                     </a>
                     <ul class="treeview-menu">
-                        <?php if($val['node']){ ?>
+                        <?php if(!empty($val['node'])){ ?>
                             <?php foreach($val['node'] as $v){ ?>
                                 <li <?php if($currentMethod == $v['method'] && $val['class'] == $currentClass){echo 'class="active"';} ?>><a href="<?=$v['uri']?>"><i class="fa fa-circle-o"></i> <?=$v['name']?></a></li>
                             <?php } ?>

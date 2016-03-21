@@ -95,13 +95,13 @@ $query_builder = TRUE;
 	'save_queries' => TRUE
 );*/
 $db['default'] = array(
-	'dsn'	=> '',
-	'hostname' => '127.0.0.1',
-	'username' => 'root',
-	'password' => '123456',
-	'database' => 'yaojing',
-	'dbdriver' => 'mysqli',
-	'dbprefix' => 'yj_',
+    'dsn'	=> '',
+    'hostname' => '47.89.54.152',
+    'username' => 'kworm',
+    'password' => 'margin-right:4pxsolid#EEE;',
+    'database' => 'yaojing',
+    'dbdriver' => 'mysqli',
+    'dbprefix' => 'yj_',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
 	'cache_on' => FALSE,

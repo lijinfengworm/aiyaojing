@@ -1,0 +1,7 @@
+parameters:
+    image.class: AppBundle\Service\ImagesService
+    image.config:
+
+services:
+    image_service:
+        class: %image.class%

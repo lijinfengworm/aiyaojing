@@ -1,1 +1,37 @@
 {% extends 'layout.html.twig' %}
+{% block mainContent %}
+    <div class="content">
+        <div class="blog">
+            {% for lt in list %}
+
+            <div class="blog-top">
+                <div class="col-d">
+                    <div class="slider1">
+                        <div class="callbacks_container">
+                            <ul class="rslides" id="slider1">
+                                <li>
+                                    <img src="{{ lt['cover'] }}" alt="">
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="blog-in">
+                        <h5><a href="single.html">{{ lt['title'] }}</a></h5>
+                        <p>{{ lt['abstract'] }}</p>
+                        <ul class="date">
+                            <li><span><a href="#"><i ></i>12 Comments</a></span></li>
+                            <li><span><i class="date-in"></i>09-07-2013</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            {% endfor %}
+            <div class="clear"> </div>
+        </div>
+        <div class="arrow arrow-at"><img  src="images/ic.png" /></div>
+    </div>
+
+
+{% endblock %}

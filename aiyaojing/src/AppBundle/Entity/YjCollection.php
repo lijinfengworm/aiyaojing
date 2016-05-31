@@ -242,4 +242,32 @@ class YjCollection
     {
         return $this->id;
     }
+    /**
+     * @var integer
+     */
+    private $coverImage;
+
+
+    /**
+     * Set coverImage
+     *
+     * @param integer $coverImage
+     * @return YjCollection
+     */
+    public function setCoverImage($coverImage)
+    {
+        $this->coverImage = $coverImage;
+
+        return $this;
+    }
+
+    /**
+     * Get coverImage
+     *
+     * @return integer 
+     */
+    public function getCoverImage()
+    {
+        return $this->coverImage;
+    }
 }

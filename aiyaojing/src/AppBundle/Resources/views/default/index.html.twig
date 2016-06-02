@@ -3,7 +3,6 @@
     <div class="content">
         <div class="blog">
             {% for lt in list %}
-
             <div class="blog-top">
                 <div class="col-d">
                     <div class="slider1">
@@ -17,10 +16,10 @@
                         </div>
                     </div>
                     <div class="blog-in">
-                        <h5><a href="single.html">{{ lt['title'] }}</a></h5>
+                        <h5><a href="/detail?cate={{ cate }}&collect={{ lt['id'] }} ">{{ lt['title'] }}</a></h5>
                         <p>{{ lt['abstract'] }}</p>
                         <ul class="date">
-                            <li><span><a href="#"><i ></i>12 Comments</a></span></li>
+                            <li><span><a href="/detail?cate={{ cate }}&collect={{ lt['id'] }} "><i ></i>12 Comments</a></span></li>
                             <li><span><i class="date-in"></i>09-07-2013</span></li>
                         </ul>
                     </div>

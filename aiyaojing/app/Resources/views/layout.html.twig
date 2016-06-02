@@ -31,12 +31,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         <div class="top-nav">
             <ul >
-                <li class="active" ><a href="index.html" >HOME</a></li>
-                <li><a href="work.html" class="black" > WORK</a></li>
-                <li><a href="about.html" class="black1"> ABOUT</a></li>
-                <li><a href="blog.html" class="black2" > BLOG</a></li>
-                <li><a href="404.html" class="black3" > SERVICES</a></li>
-                <li><a href="contact.html" class="black4" > CONTACT</a></li>
+                {% set leftTree = app.session.get('tree')  %}
+                {%  for key, tr in leftTree  %}
+                    <li {% if key == cate-1 %} class="active" {% endif %} ><a href="/?cate={{ tr['id'] }}" >{{ tr['category_name'] }}</a></li>
+
+                {% endfor %}
+
             </ul>
         </div>
     </div>

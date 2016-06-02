@@ -19,10 +19,15 @@ class DefaultController extends MyController
      */
     public function indexAction(Request $request)
     {
+        $currentCid = $request->get('cate', 0);
+
+
+        $request->getSession()->set("tree", $this->leftTree);
 
         $list = $this->get("image_service")->getCollection();
         $data = $this->_formatImageList($list);
-        return $this->render('AppBundle:default:index.html.twig',[ "list" => $data ]);
+
+        return $this->render('AppBundle:default:index.html.twig',[ "list" => $data, 'cate' =>$currentCid ]);
 
     }
     private  function _formatImageList($list){
@@ -36,6 +41,20 @@ class DefaultController extends MyController
             }
         }
         return $newData;
+    }
+
+    /**
+     * @param Request $request
+     * @Route("/detail", name="detail")
+     */
+    public function detailAction(Request $request){
+        $currentCate = $request->get('cate', 0);
+        $collect = $request->get('collect', 0);
+        $images = $this->get("image_service")->getImagesByCid($collect);
+
+        $collection = $this->get("image_service")->getCollectionById($collect);
+
+        return $this->render('AppBundle:default:detail.html.twig', [ 'list' => $images, 'collect' => $collection,  'cate' =>$currentCate ]);
     }
 
 }

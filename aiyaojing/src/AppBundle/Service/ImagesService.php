@@ -38,7 +38,15 @@ class ImagesService
         }
         return '';
     }
-    public function getLeftTree(){
-        return 12312;
+    public function getImagesByCid($cid){
+        $query = $this->em->createQuery('select i from AppBundle:YjImages i where i.cid = :id')->setParameter('id', $cid);
+        $image = $query->getArrayResult();
+        return $image;
     }
+    public function getCollectionById($id){
+        $query = $this->em->createQuery('select i from AppBundle:YjCollection i where i.id = :id')->setParameter('id', $id);
+        $collection = $query->getArrayResult();
+        return $collection;
+    }
+
 }

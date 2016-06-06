@@ -1,0 +1,45 @@
+AppBundle\Entity\YjAuth:
+    type: entity
+    table: yj_auth
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        fid:
+            type: integer
+            nullable: true
+            unsigned: false
+        isTree:
+            type: boolean
+            nullable: true
+            column: is_tree
+        name:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        class:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        method:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        addTime:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: add_time
+        platform:
+            type: integer
+            nullable: true
+            unsigned: false
+    lifecycleCallbacks: {  }

@@ -1,0 +1,40 @@
+AppBundle\Entity\YjUser:
+    type: entity
+    table: yj_user
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        userName:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: user_name
+        sex:
+            type: boolean
+            nullable: true
+        tel:
+            type: bigint
+            nullable: true
+            unsigned: false
+        realName:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: real_name
+        addTime:
+            type: datetime
+            nullable: true
+            column: add_time
+        gold:
+            type: integer
+            nullable: true
+            unsigned: false
+    lifecycleCallbacks: {  }

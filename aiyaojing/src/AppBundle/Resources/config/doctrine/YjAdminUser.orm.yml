@@ -1,0 +1,65 @@
+AppBundle\Entity\YjAdminUser:
+    type: entity
+    table: yj_admin_user
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        userName:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: user_name
+        password:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        sex:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        tel:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        realName:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: real_name
+        auth:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        addTime:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: add_time
+        lastLoginIp:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: last_login_ip
+        lastLoginTime:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: last_login_time
+        status:
+            type: boolean
+            nullable: true
+            default: '1'
+    lifecycleCallbacks: {  }

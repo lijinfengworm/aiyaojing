@@ -1,0 +1,53 @@
+AppBundle\Entity\YjCollection:
+    type: entity
+    table: yj_collection
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        title:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        abstract:
+            type: text
+            nullable: true
+            length: 65535
+            fixed: false
+        addTime:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: add_time
+        uid:
+            type: integer
+            nullable: true
+            unsigned: false
+        isUse:
+            type: boolean
+            nullable: true
+            default: '1'
+            column: is_use
+        showTime:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: show_time
+        cateId:
+            type: smallint
+            nullable: true
+            unsigned: false
+            column: cate_id
+        coverImage:
+            type: integer
+            nullable: true
+            unsigned: false
+            default: '0'
+            column: cover_image
+    lifecycleCallbacks: {  }

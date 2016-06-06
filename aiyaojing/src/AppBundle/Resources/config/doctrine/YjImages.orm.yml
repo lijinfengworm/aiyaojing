@@ -1,0 +1,57 @@
+AppBundle\Entity\YjImages:
+    type: entity
+    table: yj_images
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        cid:
+            type: integer
+            nullable: true
+            unsigned: false
+            default: '0'
+        uid:
+            type: integer
+            nullable: true
+            unsigned: false
+        originalImage:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: original_image
+        mediumImage:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: medium_image
+        smallImage:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: small_image
+        source:
+            type: boolean
+            nullable: true
+        addTime:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: add_time
+        isUse:
+            type: boolean
+            nullable: true
+            column: is_use
+        label:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+    lifecycleCallbacks: {  }

@@ -50,4 +50,9 @@ AppBundle\Entity\YjCollection:
             unsigned: false
             default: '0'
             column: cover_image
+        type:
+            type: boolean
+            nullable: true
+            comment: '1:图片，2视频'
+            default: '1'
     lifecycleCallbacks: {  }

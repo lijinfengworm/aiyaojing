@@ -37,4 +37,19 @@ AppBundle\Entity\YjUser:
             type: integer
             nullable: true
             unsigned: false
+        avatar:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+        loginTime:
+            type: integer
+            nullable: true
+            unsigned: false
+            column: login_time
+        praise:
+            type: integer
+            nullable: true
+            unsigned: false
+            default: '1'
     lifecycleCallbacks: {  }

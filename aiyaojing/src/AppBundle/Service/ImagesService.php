@@ -48,5 +48,21 @@ class ImagesService
         $collection = $query->getArrayResult();
         return $collection;
     }
+    public function getUserInfoByCid($uid){
+
+        if($uid){
+            $user = $this->em->createQuery('select i from AppBundle:YjUser i where i.id = :id')->setParameter('id', $uid);
+
+            $userInfo = $user->getArrayResult();
+
+            if(!empty($userInfo)){
+                $attrQuery = $this->em->createQuery('select l from AppBundle:YjLabel l where l.owner = :owner')->setParameter('owner', $userInfo[0]['id']);
+                $attr = $attrQuery->getArrayResult();
+                $userInfo[0]['attr'] = $attr;
+            }
+            return $userInfo;
+        }
+        return [];
+    }
 
 }

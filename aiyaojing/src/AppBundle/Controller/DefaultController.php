@@ -51,10 +51,12 @@ class DefaultController extends MyController
         $currentCate = $request->get('cate', 0);
         $collect = $request->get('collect', 0);
         $images = $this->get("image_service")->getImagesByCid($collect);
-
         $collection = $this->get("image_service")->getCollectionById($collect);
-
-        return $this->render('AppBundle:default:detail.html.twig', [ 'list' => $images, 'collect' => $collection,  'cate' =>$currentCate ]);
+        $userInfo = [];
+        if(!empty($collection)){
+            $userInfo = $this->get("image_service")->getUserInfoByCid($collection[0]['uid']);
+        }
+        return $this->render('AppBundle:default:detail.html.twig', [ 'list' => $images, 'collect' => $collection,  'cate' =>$currentCate, 'user' => $userInfo ]);
     }
 
 }

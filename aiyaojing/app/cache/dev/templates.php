@@ -78,6 +78,7 @@
   'SwiftmailerBundle:Collector:swiftmailer.html.twig' => '/data0/git/aiyaojing/aiyaojing/vendor/symfony/swiftmailer-bundle/Resources/views/Collector/swiftmailer.html.twig',
   'DoctrineBundle:Collector:db.html.twig' => '/data0/git/aiyaojing/aiyaojing/vendor/doctrine/doctrine-bundle/Resources/views/Collector/db.html.twig',
   'DoctrineBundle:Collector:explain.html.twig' => '/data0/git/aiyaojing/aiyaojing/vendor/doctrine/doctrine-bundle/Resources/views/Collector/explain.html.twig',
+  'AppBundle:default:detail.html.twig' => '/data0/git/aiyaojing/aiyaojing/src/AppBundle/Resources/views/default/detail.html.twig',
   'AppBundle:default:index.html.twig' => '/data0/git/aiyaojing/aiyaojing/src/AppBundle/Resources/views/default/index.html.twig',
   'DebugBundle:Profiler:dump.html.twig' => '/data0/git/aiyaojing/aiyaojing/vendor/symfony/symfony/src/Symfony/Bundle/DebugBundle/Resources/views/Profiler/dump.html.twig',
   'WebProfilerBundle:Profiler:base_js.html.twig' => '/data0/git/aiyaojing/aiyaojing/vendor/symfony/symfony/src/Symfony/Bundle/WebProfilerBundle/Resources/views/Profiler/base_js.html.twig',

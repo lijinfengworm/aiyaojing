@@ -212,4 +212,88 @@ class YjUser
     {
         return $this->id;
     }
+    /**
+     * @var string
+     */
+    private $avatar;
+
+    /**
+     * @var integer
+     */
+    private $loginTime;
+
+    /**
+     * @var integer
+     */
+    private $praise;
+
+
+    /**
+     * Set avatar
+     *
+     * @param string $avatar
+     * @return YjUser
+     */
+    public function setAvatar($avatar)
+    {
+        $this->avatar = $avatar;
+
+        return $this;
+    }
+
+    /**
+     * Get avatar
+     *
+     * @return string 
+     */
+    public function getAvatar()
+    {
+        return $this->avatar;
+    }
+
+    /**
+     * Set loginTime
+     *
+     * @param integer $loginTime
+     * @return YjUser
+     */
+    public function setLoginTime($loginTime)
+    {
+        $this->loginTime = $loginTime;
+
+        return $this;
+    }
+
+    /**
+     * Get loginTime
+     *
+     * @return integer 
+     */
+    public function getLoginTime()
+    {
+        return $this->loginTime;
+    }
+
+    /**
+     * Set praise
+     *
+     * @param integer $praise
+     * @return YjUser
+     */
+    public function setPraise($praise)
+    {
+        $this->praise = $praise;
+
+        return $this;
+    }
+
+    /**
+     * Get praise
+     *
+     * @return integer 
+     */
+    public function getPraise()
+    {
+        return $this->praise;
+    }
 }

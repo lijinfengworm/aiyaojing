@@ -1,0 +1,34 @@
+AppBundle\Entity\YjLabel:
+    type: entity
+    table: yj_label
+    id:
+        id:
+            type: integer
+            nullable: false
+            unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        category:
+            type: boolean
+            nullable: true
+            comment: '1:合集， 2：用户'
+            default: '1'
+        labelName:
+            type: string
+            nullable: true
+            length: 255
+            fixed: false
+            column: label_name
+        owner:
+            type: integer
+            nullable: true
+            unsigned: false
+        addTime:
+            type: integer
+            nullable: false
+            unsigned: false
+            default: '1'
+            column: add_time
+    lifecycleCallbacks: {  }

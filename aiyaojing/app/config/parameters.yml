@@ -1,0 +1,12 @@
+# This file is auto-generated during the composer install
+parameters:
+    database_host: 47.89.54.152
+    database_port: 3306
+    database_name: yaojing
+    database_user: root
+    database_password: margin-right:4pxsolid#EEE;
+    mailer_transport: smtp
+    mailer_host: 127.0.0.1
+    mailer_user: null
+    mailer_password: null
+    secret: aa12fce34e747f6c32c66865d7d237ad029b65df

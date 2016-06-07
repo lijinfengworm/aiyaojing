@@ -9,7 +9,7 @@
                         <div class="callbacks_container">
                             <ul class="rslides" id="slider1">
                                 <li>
-                                    <img src="http://admin.aiyaojing.com/{{ lt['cover'] }}" alt="">
+                                    <a href="/detail?cate={{ cate }}&collect={{ lt['id'] }} "><img src="http://admin.aiyaojing.com/{{ lt['cover'] }}" alt="" style="width: 100%"></a>
 
                                 </li>
                             </ul>
@@ -19,8 +19,8 @@
                         <h5><a href="/detail?cate={{ cate }}&collect={{ lt['id'] }} ">{{ lt['title'] }}</a></h5>
                         <p>{{ lt['abstract'] }}</p>
                         <ul class="date">
-                            <li><span><a href="/detail?cate={{ cate }}&collect={{ lt['id'] }} "><i ></i>12 Comments</a></span></li>
-                            <li><span><i class="date-in"></i>09-07-2013</span></li>
+                            {#<li><span><a href="/detail?cate={{ cate }}&collect={{ lt['id'] }} "><i ></i>12 Comments</a></span></li>#}
+                            <li><span><i class="date-in"></i>{{ lt["showTime"]|date("m-d H:i") }}</span></li>
                         </ul>
                     </div>
                 </div>
@@ -29,7 +29,7 @@
             {% endfor %}
             <div class="clear"> </div>
         </div>
-        <div class="arrow arrow-at"><img  src="images/ic.png" /></div>
+        {#<div class="arrow arrow-at"><img  src="{{ asset('bundles/app/images/ic.png') }}" /></div>#}
     </div>
 
 

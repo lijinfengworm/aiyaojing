@@ -56,6 +56,8 @@ class DefaultController extends MyController
         if(!empty($collection)){
             $userInfo = $this->get("image_service")->getUserInfoByCid($collection[0]['uid']);
         }
+
+
         return $this->render('AppBundle:default:detail.html.twig', [ 'list' => $images, 'collect' => $collection,  'cate' =>$currentCate, 'user' => $userInfo ]);
     }
 

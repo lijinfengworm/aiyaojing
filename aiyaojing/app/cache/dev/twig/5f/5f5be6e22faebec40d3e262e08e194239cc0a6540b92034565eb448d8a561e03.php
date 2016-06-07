@@ -21,20 +21,20 @@ class __TwigTemplate_2ccf8a3dd9e7e4143ea915610c83bde8009f7b56144f6a2790817293a41
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_0c043d3da509d357ce2d112faeaad5d8c422578acabaa29a6768b5d8714e2eab = $this->env->getExtension("native_profiler");
-        $__internal_0c043d3da509d357ce2d112faeaad5d8c422578acabaa29a6768b5d8714e2eab->enter($__internal_0c043d3da509d357ce2d112faeaad5d8c422578acabaa29a6768b5d8714e2eab_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle:default:index.html.twig"));
+        $__internal_b8d034f0abb96b042801854d78da1230ea04b54883ecf392979e68a4d1c591d2 = $this->env->getExtension("native_profiler");
+        $__internal_b8d034f0abb96b042801854d78da1230ea04b54883ecf392979e68a4d1c591d2->enter($__internal_b8d034f0abb96b042801854d78da1230ea04b54883ecf392979e68a4d1c591d2_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle:default:index.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_0c043d3da509d357ce2d112faeaad5d8c422578acabaa29a6768b5d8714e2eab->leave($__internal_0c043d3da509d357ce2d112faeaad5d8c422578acabaa29a6768b5d8714e2eab_prof);
+        $__internal_b8d034f0abb96b042801854d78da1230ea04b54883ecf392979e68a4d1c591d2->leave($__internal_b8d034f0abb96b042801854d78da1230ea04b54883ecf392979e68a4d1c591d2_prof);
 
     }
 
     // line 2
     public function block_mainContent($context, array $blocks = array())
     {
-        $__internal_0c495170912da71fa93b104b0cd8add392314f59beab4b23fb1211aea9cc721d = $this->env->getExtension("native_profiler");
-        $__internal_0c495170912da71fa93b104b0cd8add392314f59beab4b23fb1211aea9cc721d->enter($__internal_0c495170912da71fa93b104b0cd8add392314f59beab4b23fb1211aea9cc721d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "mainContent"));
+        $__internal_5cddece1f3303033a24094494ff5d1109780e9e5bdcdae445edf3269210590b8 = $this->env->getExtension("native_profiler");
+        $__internal_5cddece1f3303033a24094494ff5d1109780e9e5bdcdae445edf3269210590b8->enter($__internal_5cddece1f3303033a24094494ff5d1109780e9e5bdcdae445edf3269210590b8_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "mainContent"));
 
         // line 3
         echo "    <div class=\"content\">
@@ -51,10 +51,14 @@ class __TwigTemplate_2ccf8a3dd9e7e4143ea915610c83bde8009f7b56144f6a2790817293a41
                         <div class=\"callbacks_container\">
                             <ul class=\"rslides\" id=\"slider1\">
                                 <li>
-                                    <img src=\"http://admin.aiyaojing.com/";
+                                    <a href=\"/detail?cate=";
             // line 12
+            echo twig_escape_filter($this->env, (isset($context["cate"]) ? $context["cate"] : $this->getContext($context, "cate")), "html", null, true);
+            echo "&collect=";
+            echo twig_escape_filter($this->env, $this->getAttribute($context["lt"], "id", array(), "array"), "html", null, true);
+            echo " \"><img src=\"http://admin.aiyaojing.com/";
             echo twig_escape_filter($this->env, $this->getAttribute($context["lt"], "cover", array(), "array"), "html", null, true);
-            echo "\" alt=\"\">
+            echo "\" alt=\"\" style=\"width: 100%\"></a>
 
                                 </li>
                             </ul>
@@ -74,13 +78,11 @@ class __TwigTemplate_2ccf8a3dd9e7e4143ea915610c83bde8009f7b56144f6a2790817293a41
             echo twig_escape_filter($this->env, $this->getAttribute($context["lt"], "abstract", array(), "array"), "html", null, true);
             echo "</p>
                         <ul class=\"date\">
-                            <li><span><a href=\"/detail?cate=";
-            // line 22
-            echo twig_escape_filter($this->env, (isset($context["cate"]) ? $context["cate"] : $this->getContext($context, "cate")), "html", null, true);
-            echo "&collect=";
-            echo twig_escape_filter($this->env, $this->getAttribute($context["lt"], "id", array(), "array"), "html", null, true);
-            echo " \"><i ></i>12 Comments</a></span></li>
-                            <li><span><i class=\"date-in\"></i>09-07-2013</span></li>
+                            ";
+            // line 23
+            echo "                            <li><span><i class=\"date-in\"></i>";
+            echo twig_escape_filter($this->env, twig_date_format_filter($this->env, $this->getAttribute($context["lt"], "showTime", array(), "array"), "m-d H:i"), "html", null, true);
+            echo "</span></li>
                         </ul>
                     </div>
                 </div>
@@ -94,13 +96,14 @@ class __TwigTemplate_2ccf8a3dd9e7e4143ea915610c83bde8009f7b56144f6a2790817293a41
         // line 30
         echo "            <div class=\"clear\"> </div>
         </div>
-        <div class=\"arrow arrow-at\"><img  src=\"images/ic.png\" /></div>
-    </div>
+        ";
+        // line 33
+        echo "    </div>
 
 
 ";
         
-        $__internal_0c495170912da71fa93b104b0cd8add392314f59beab4b23fb1211aea9cc721d->leave($__internal_0c495170912da71fa93b104b0cd8add392314f59beab4b23fb1211aea9cc721d_prof);
+        $__internal_5cddece1f3303033a24094494ff5d1109780e9e5bdcdae445edf3269210590b8->leave($__internal_5cddece1f3303033a24094494ff5d1109780e9e5bdcdae445edf3269210590b8_prof);
 
     }
 
@@ -116,7 +119,7 @@ class __TwigTemplate_2ccf8a3dd9e7e4143ea915610c83bde8009f7b56144f6a2790817293a41
 
     public function getDebugInfo()
     {
-        return array (  95 => 30,  79 => 22,  74 => 20,  66 => 19,  56 => 12,  48 => 6,  44 => 5,  40 => 3,  34 => 2,  11 => 1,);
+        return array (  101 => 33,  97 => 30,  83 => 23,  78 => 20,  70 => 19,  56 => 12,  48 => 6,  44 => 5,  40 => 3,  34 => 2,  11 => 1,);
     }
 }
 /* {% extends 'layout.html.twig' %}*/
@@ -130,7 +133,7 @@ class __TwigTemplate_2ccf8a3dd9e7e4143ea915610c83bde8009f7b56144f6a2790817293a41
 /*                         <div class="callbacks_container">*/
 /*                             <ul class="rslides" id="slider1">*/
 /*                                 <li>*/
-/*                                     <img src="http://admin.aiyaojing.com/{{ lt['cover'] }}" alt="">*/
+/*                                     <a href="/detail?cate={{ cate }}&collect={{ lt['id'] }} "><img src="http://admin.aiyaojing.com/{{ lt['cover'] }}" alt="" style="width: 100%"></a>*/
 /* */
 /*                                 </li>*/
 /*                             </ul>*/
@@ -140,8 +143,8 @@ class __TwigTemplate_2ccf8a3dd9e7e4143ea915610c83bde8009f7b56144f6a2790817293a41
 /*                         <h5><a href="/detail?cate={{ cate }}&collect={{ lt['id'] }} ">{{ lt['title'] }}</a></h5>*/
 /*                         <p>{{ lt['abstract'] }}</p>*/
 /*                         <ul class="date">*/
-/*                             <li><span><a href="/detail?cate={{ cate }}&collect={{ lt['id'] }} "><i ></i>12 Comments</a></span></li>*/
-/*                             <li><span><i class="date-in"></i>09-07-2013</span></li>*/
+/*                             {#<li><span><a href="/detail?cate={{ cate }}&collect={{ lt['id'] }} "><i ></i>12 Comments</a></span></li>#}*/
+/*                             <li><span><i class="date-in"></i>{{ lt["showTime"]|date("m-d H:i") }}</span></li>*/
 /*                         </ul>*/
 /*                     </div>*/
 /*                 </div>*/
@@ -150,7 +153,7 @@ class __TwigTemplate_2ccf8a3dd9e7e4143ea915610c83bde8009f7b56144f6a2790817293a41
 /*             {% endfor %}*/
 /*             <div class="clear"> </div>*/
 /*         </div>*/
-/*         <div class="arrow arrow-at"><img  src="images/ic.png" /></div>*/
+/*         {#<div class="arrow arrow-at"><img  src="{{ asset('bundles/app/images/ic.png') }}" /></div>#}*/
 /*     </div>*/
 /* */
 /* */

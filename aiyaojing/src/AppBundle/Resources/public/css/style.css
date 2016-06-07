@@ -120,7 +120,7 @@ ul.social-in li{
 	display: inline-block;	
 }
 ul.social-in li  i{
-	background: url(../images/img-sprite.png)no-repeat -411px -9px;
+	background: url(/bundles/app/images/img-sprite.png)no-repeat -411px -9px;
 	width: 28px;
 	height: 28px;
 	display: inline-block;
@@ -238,7 +238,7 @@ p.footer-class a:hover{
 	margin:0 0 1em;
 }
 .b-animate i{
-	background:url(../images/ar.png) no-repeat 0px 0px;
+	background:url(/bundles/app/images/ar.png) no-repeat 0px 0px;
 	width:70px;
 	height:70px;
 	display:block;
@@ -279,7 +279,7 @@ ul.social li a:hover{
 	color:#1ab5b3;
 }
 ul.social li  i{
-	  background: url(../images/img-sprite.png)no-repeat -39px -49px;
+	  background: url(/bundles/app/images/img-sprite.png)no-repeat -39px -49px;
 	width: 23px;
 	height: 23px;
 	display: inline-block;
@@ -443,7 +443,7 @@ ul.likes li a:hover{
 	color:#1ab5b3;
 }
 ul.likes li  i{
-	background: url(../images/img-sprite.png)no-repeat -14px -91px ;
+	background: url(/bundles/app/images/img-sprite.png)no-repeat -14px -91px ;
 	width: 40px;
 	height: 40px;
 	display: inline-block;
@@ -493,7 +493,7 @@ ul.feature-grid li a:hover{
 	color:#1ab5b3;
 }
 ul.feature-grid li i{
-	background: url(../images/img-sprite.png)no-repeat -188px -52px ;
+	background: url(/bundles/app/images/img-sprite.png)no-repeat -188px -52px ;
 	width: 18px;
 	height: 18px;
 	display: inline-block;
@@ -741,7 +741,7 @@ ul.date li span{
 	padding: 0 0.3em 0 0;
 }
 ul.date li i{
-	background: url(../images/img-sprite.png)no-repeat -139px -51px ;
+	background: url(/bundles/app/images/img-sprite.png)no-repeat -139px -51px ;
 	width: 20px;
 	height: 20px;
 	display: inline-block;
@@ -756,7 +756,7 @@ ul.date li a{
 	color:#9c9c9c;	
 }
 .col-d label{
-	background: url(../images/ar.png) no-repeat 0px 0px;
+	background: url(/bundles/app/images/ar.png) no-repeat 0px 0px;
 	width: 70px;
 	height: 70px;
 	display: block;
@@ -852,7 +852,7 @@ iframe{
   text-decoration: none;
   height: 43px;
   width: 43px;
-  background: url("../images/img-sprite.png") no-repeat -275px -89px;
+  background: url("/bundles/app/images/img-sprite.png") no-repeat -275px -89px;
   }
 .callbacks_nav.next {
   left: auto;
@@ -971,7 +971,7 @@ a.just-do:hover {
   padding: 0 0 0 28% ;
 }
 .comments-top-top label{
-	background:url(../images/li.png)no-repeat 1px 2px;
+	background:url(/bundles/app/images/li.png)no-repeat 1px 2px;
 	width:45px;
 	height:45px;
 	display:block;
@@ -991,7 +991,7 @@ label.arrow-in {
   margin: 0.8em 0;
 }
 .your-single i {
-    background: url(../images/img-sprite.png)no-repeat -9px -86px ;
+    background: url(/bundles/app/images/img-sprite.png)no-repeat -9px -86px ;
   width: 50px;
   height: 50px;
   display: inline-block;
@@ -1080,7 +1080,7 @@ ul.archive-grid li a:hover{
   margin: 0.8em 0;
 }
 .your-top i {
-    background: url(../images/img-sprite.png)no-repeat -9px -86px ;
+    background: url(/bundles/app/images/img-sprite.png)no-repeat -9px -86px ;
   width: 50px;
   height: 50px;
   display: inline-block;
@@ -1996,7 +1996,7 @@ a.just-do {
   padding: 0.5em 0 0;
 }
 .your-top i ,.your-single i{
-  background: url(../images/img-sprite.png)no-repeat -16px -93px;
+  background: url(/bundles/app/images/img-sprite.png)no-repeat -16px -93px;
   width: 37px;
   height: 37px;
 }

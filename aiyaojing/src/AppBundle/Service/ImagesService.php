@@ -18,9 +18,10 @@ class ImagesService
 
     public function getCollection($cid){
         if($cid){
-            $query = $this->em->createQuery('select i from AppBundle:YjCollection i ');
-        }else{
             $query = $this->em->createQuery('select i from AppBundle:YjCollection i where i.cateId = :id ')->setParameter("id", $cid);
+
+        }else{
+            $query = $this->em->createQuery('select i from AppBundle:YjCollection i ');
         }
 
         return $query->getArrayResult();

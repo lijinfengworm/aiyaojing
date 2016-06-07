@@ -24,7 +24,7 @@ class DefaultController extends MyController
 
         $request->getSession()->set("tree", $this->leftTree);
 
-        $list = $this->get("image_service")->getCollection();
+        $list = $this->get("image_service")->getCollection($currentCid);
         $data = $this->_formatImageList($list);
 
         return $this->render('AppBundle:default:index.html.twig',[ "list" => $data, 'cate' =>$currentCid ]);

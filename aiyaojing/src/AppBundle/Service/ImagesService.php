@@ -16,9 +16,9 @@ class ImagesService
         $this->em = $em;
     }
 
-    public function getCollection(){
+    public function getCollection($cid){
         //$this->em->createQuery()->getResult();
-        $query = $this->em->createQuery('select i from AppBundle:YjCollection i ');
+        $query = $this->em->createQuery('select i from AppBundle:YjCollection i where i.cateId = :id ')->setParameter("id", $cid);
         return $query->getArrayResult();
         //return $this->em->getRepository("AppBundle:YjCollection")->findAll();
     }

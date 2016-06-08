@@ -1,6 +1,6 @@
 <?php
 
-/* TwigBundle:Exception:trace.html.twig */
+/* @Twig/Exception/trace.html.twig */
 class __TwigTemplate_ec75a51182d05aacf9e35a127e9765791eeb13955b806ab545171370f8654bc5 extends Twig_Template
 {
     public function __construct(Twig_Environment $env)
@@ -15,8 +15,8 @@ class __TwigTemplate_ec75a51182d05aacf9e35a127e9765791eeb13955b806ab545171370f86
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_67f0a85b80c046556e35c425acbe25bdeff31c9430714b6c10465f9367bbaf92 = $this->env->getExtension("native_profiler");
-        $__internal_67f0a85b80c046556e35c425acbe25bdeff31c9430714b6c10465f9367bbaf92->enter($__internal_67f0a85b80c046556e35c425acbe25bdeff31c9430714b6c10465f9367bbaf92_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "TwigBundle:Exception:trace.html.twig"));
+        $__internal_d97165db814cfd33c46f98dbdc80cd9d4ddf574d57d125d418c06ab265a55287 = $this->env->getExtension("native_profiler");
+        $__internal_d97165db814cfd33c46f98dbdc80cd9d4ddf574d57d125d418c06ab265a55287->enter($__internal_d97165db814cfd33c46f98dbdc80cd9d4ddf574d57d125d418c06ab265a55287_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "@Twig/Exception/trace.html.twig"));
 
         // line 1
         if ($this->getAttribute((isset($context["trace"]) ? $context["trace"] : $this->getContext($context, "trace")), "function", array())) {
@@ -93,13 +93,13 @@ class __TwigTemplate_ec75a51182d05aacf9e35a127e9765791eeb13955b806ab545171370f86
 ";
         }
         
-        $__internal_67f0a85b80c046556e35c425acbe25bdeff31c9430714b6c10465f9367bbaf92->leave($__internal_67f0a85b80c046556e35c425acbe25bdeff31c9430714b6c10465f9367bbaf92_prof);
+        $__internal_d97165db814cfd33c46f98dbdc80cd9d4ddf574d57d125d418c06ab265a55287->leave($__internal_d97165db814cfd33c46f98dbdc80cd9d4ddf574d57d125d418c06ab265a55287_prof);
 
     }
 
     public function getTemplateName()
     {
-        return "TwigBundle:Exception:trace.html.twig";
+        return "@Twig/Exception/trace.html.twig";
     }
 
     public function isTraitable()

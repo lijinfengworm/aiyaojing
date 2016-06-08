@@ -54,9 +54,10 @@ AppBundle\Entity\YjImages:
             nullable: true
             length: 255
             fixed: false
-        title:
+        imageAbstract:
             type: string
             nullable: true
             length: 255
             fixed: false
+            column: image_abstract
     lifecycleCallbacks: {  }

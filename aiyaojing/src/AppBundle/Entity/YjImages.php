@@ -330,4 +330,32 @@ class YjImages
     {
         return $this->title;
     }
+    /**
+     * @var string
+     */
+    private $imageAbstract;
+
+
+    /**
+     * Set imageAbstract
+     *
+     * @param string $imageAbstract
+     * @return YjImages
+     */
+    public function setImageAbstract($imageAbstract)
+    {
+        $this->imageAbstract = $imageAbstract;
+
+        return $this;
+    }
+
+    /**
+     * Get imageAbstract
+     *
+     * @return string 
+     */
+    public function getImageAbstract()
+    {
+        return $this->imageAbstract;
+    }
 }

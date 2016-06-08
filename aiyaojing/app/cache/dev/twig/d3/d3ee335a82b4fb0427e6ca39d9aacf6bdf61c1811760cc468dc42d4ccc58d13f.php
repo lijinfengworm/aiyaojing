@@ -21,8 +21,8 @@ class __TwigTemplate_140037b28ba0e9c6da17b2712a5f6c7032412755b70b3e80bf062f751ce
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_70319e391878b5a36653edbe71cb9552b027fe739b4c5ae66d32d50064d8cb5e = $this->env->getExtension("native_profiler");
-        $__internal_70319e391878b5a36653edbe71cb9552b027fe739b4c5ae66d32d50064d8cb5e->enter($__internal_70319e391878b5a36653edbe71cb9552b027fe739b4c5ae66d32d50064d8cb5e_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "layout.html.twig"));
+        $__internal_7c4db1f0c80d09831c36661b879e6bd87c331bbed0cccdcf0fed0f136330aebf = $this->env->getExtension("native_profiler");
+        $__internal_7c4db1f0c80d09831c36661b879e6bd87c331bbed0cccdcf0fed0f136330aebf->enter($__internal_7c4db1f0c80d09831c36661b879e6bd87c331bbed0cccdcf0fed0f136330aebf_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "layout.html.twig"));
 
         // line 1
         echo "<!DOCTYPE html>
@@ -69,29 +69,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         // line 242
         $this->displayBlock('footer', $context, $blocks);
         
-        $__internal_70319e391878b5a36653edbe71cb9552b027fe739b4c5ae66d32d50064d8cb5e->leave($__internal_70319e391878b5a36653edbe71cb9552b027fe739b4c5ae66d32d50064d8cb5e_prof);
+        $__internal_7c4db1f0c80d09831c36661b879e6bd87c331bbed0cccdcf0fed0f136330aebf->leave($__internal_7c4db1f0c80d09831c36661b879e6bd87c331bbed0cccdcf0fed0f136330aebf_prof);
 
     }
 
     // line 4
     public function block_title($context, array $blocks = array())
     {
-        $__internal_58dffdbef6b40898feaf6cf5219725054f96d56b3a2d6109d16b85005f8040fe = $this->env->getExtension("native_profiler");
-        $__internal_58dffdbef6b40898feaf6cf5219725054f96d56b3a2d6109d16b85005f8040fe->enter($__internal_58dffdbef6b40898feaf6cf5219725054f96d56b3a2d6109d16b85005f8040fe_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
+        $__internal_059b1310c831c0daa5c19b57a57b8ba8404e6ad2f5d3cfb7348773110ea454ca = $this->env->getExtension("native_profiler");
+        $__internal_059b1310c831c0daa5c19b57a57b8ba8404e6ad2f5d3cfb7348773110ea454ca->enter($__internal_059b1310c831c0daa5c19b57a57b8ba8404e6ad2f5d3cfb7348773110ea454ca_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "title"));
 
         // line 5
         echo "    <title>Home</title>
     ";
         
-        $__internal_58dffdbef6b40898feaf6cf5219725054f96d56b3a2d6109d16b85005f8040fe->leave($__internal_58dffdbef6b40898feaf6cf5219725054f96d56b3a2d6109d16b85005f8040fe_prof);
+        $__internal_059b1310c831c0daa5c19b57a57b8ba8404e6ad2f5d3cfb7348773110ea454ca->leave($__internal_059b1310c831c0daa5c19b57a57b8ba8404e6ad2f5d3cfb7348773110ea454ca_prof);
 
     }
 
     // line 19
     public function block_style($context, array $blocks = array())
     {
-        $__internal_a2f584bc00120ea8973db6345d17903a7e03193d522b5290e93904c9a64b0ac6 = $this->env->getExtension("native_profiler");
-        $__internal_a2f584bc00120ea8973db6345d17903a7e03193d522b5290e93904c9a64b0ac6->enter($__internal_a2f584bc00120ea8973db6345d17903a7e03193d522b5290e93904c9a64b0ac6_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "style"));
+        $__internal_ea2030efa69aa3493b97e3fafb703fdf7dd7b9cc393e96f207f87420c0ceadab = $this->env->getExtension("native_profiler");
+        $__internal_ea2030efa69aa3493b97e3fafb703fdf7dd7b9cc393e96f207f87420c0ceadab->enter($__internal_ea2030efa69aa3493b97e3fafb703fdf7dd7b9cc393e96f207f87420c0ceadab_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "style"));
 
         // line 20
         echo "        <link href=\"";
@@ -99,29 +99,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         echo "\" rel=\"stylesheet\" type=\"text/css\" media=\"all\" />
     ";
         
-        $__internal_a2f584bc00120ea8973db6345d17903a7e03193d522b5290e93904c9a64b0ac6->leave($__internal_a2f584bc00120ea8973db6345d17903a7e03193d522b5290e93904c9a64b0ac6_prof);
+        $__internal_ea2030efa69aa3493b97e3fafb703fdf7dd7b9cc393e96f207f87420c0ceadab->leave($__internal_ea2030efa69aa3493b97e3fafb703fdf7dd7b9cc393e96f207f87420c0ceadab_prof);
 
     }
 
     // line 22
     public function block_script($context, array $blocks = array())
     {
-        $__internal_786354de3f216e9d8aad80f979b54d08da7d70184b46658c86c21ec6d671cb50 = $this->env->getExtension("native_profiler");
-        $__internal_786354de3f216e9d8aad80f979b54d08da7d70184b46658c86c21ec6d671cb50->enter($__internal_786354de3f216e9d8aad80f979b54d08da7d70184b46658c86c21ec6d671cb50_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "script"));
+        $__internal_e45cb3347077d7b7d449edc20ef0f42c374c78ba9d8ca3d97fdd4c09f2ca061d = $this->env->getExtension("native_profiler");
+        $__internal_e45cb3347077d7b7d449edc20ef0f42c374c78ba9d8ca3d97fdd4c09f2ca061d->enter($__internal_e45cb3347077d7b7d449edc20ef0f42c374c78ba9d8ca3d97fdd4c09f2ca061d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "script"));
 
         // line 23
         echo "
     ";
         
-        $__internal_786354de3f216e9d8aad80f979b54d08da7d70184b46658c86c21ec6d671cb50->leave($__internal_786354de3f216e9d8aad80f979b54d08da7d70184b46658c86c21ec6d671cb50_prof);
+        $__internal_e45cb3347077d7b7d449edc20ef0f42c374c78ba9d8ca3d97fdd4c09f2ca061d->leave($__internal_e45cb3347077d7b7d449edc20ef0f42c374c78ba9d8ca3d97fdd4c09f2ca061d_prof);
 
     }
 
     // line 29
     public function block_left($context, array $blocks = array())
     {
-        $__internal_8dde0d3da928aecf6dcb8dc34f0c426e43dc09ef3fd490168b8a977a6a34f7ae = $this->env->getExtension("native_profiler");
-        $__internal_8dde0d3da928aecf6dcb8dc34f0c426e43dc09ef3fd490168b8a977a6a34f7ae->enter($__internal_8dde0d3da928aecf6dcb8dc34f0c426e43dc09ef3fd490168b8a977a6a34f7ae_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "left"));
+        $__internal_4736d125d0365a33bc0393998696dab80fc50aa4b8ee51c11abbf93bbc7f4762 = $this->env->getExtension("native_profiler");
+        $__internal_4736d125d0365a33bc0393998696dab80fc50aa4b8ee51c11abbf93bbc7f4762->enter($__internal_4736d125d0365a33bc0393998696dab80fc50aa4b8ee51c11abbf93bbc7f4762_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "left"));
 
         // line 30
         echo "    <div class=\"header-left\">
@@ -164,15 +164,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
     ";
         
-        $__internal_8dde0d3da928aecf6dcb8dc34f0c426e43dc09ef3fd490168b8a977a6a34f7ae->leave($__internal_8dde0d3da928aecf6dcb8dc34f0c426e43dc09ef3fd490168b8a977a6a34f7ae_prof);
+        $__internal_4736d125d0365a33bc0393998696dab80fc50aa4b8ee51c11abbf93bbc7f4762->leave($__internal_4736d125d0365a33bc0393998696dab80fc50aa4b8ee51c11abbf93bbc7f4762_prof);
 
     }
 
     // line 47
     public function block_mainContent($context, array $blocks = array())
     {
-        $__internal_59981c76b2f3eeb58f582f729fbd892ca049649e565cfab4b3ae6a9b37be5dc7 = $this->env->getExtension("native_profiler");
-        $__internal_59981c76b2f3eeb58f582f729fbd892ca049649e565cfab4b3ae6a9b37be5dc7->enter($__internal_59981c76b2f3eeb58f582f729fbd892ca049649e565cfab4b3ae6a9b37be5dc7_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "mainContent"));
+        $__internal_8349c83f02152ef8591802d0a8f6acf40164c163486e804a9dff2a0b9fe25130 = $this->env->getExtension("native_profiler");
+        $__internal_8349c83f02152ef8591802d0a8f6acf40164c163486e804a9dff2a0b9fe25130->enter($__internal_8349c83f02152ef8591802d0a8f6acf40164c163486e804a9dff2a0b9fe25130_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "mainContent"));
 
         // line 48
         echo "    <div class=\"content\">
@@ -424,15 +424,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
     ";
         
-        $__internal_59981c76b2f3eeb58f582f729fbd892ca049649e565cfab4b3ae6a9b37be5dc7->leave($__internal_59981c76b2f3eeb58f582f729fbd892ca049649e565cfab4b3ae6a9b37be5dc7_prof);
+        $__internal_8349c83f02152ef8591802d0a8f6acf40164c163486e804a9dff2a0b9fe25130->leave($__internal_8349c83f02152ef8591802d0a8f6acf40164c163486e804a9dff2a0b9fe25130_prof);
 
     }
 
     // line 242
     public function block_footer($context, array $blocks = array())
     {
-        $__internal_0bb2738c0efb54d4d1b3d278c69f379d3031d06af254ebea6d370fa469c7e572 = $this->env->getExtension("native_profiler");
-        $__internal_0bb2738c0efb54d4d1b3d278c69f379d3031d06af254ebea6d370fa469c7e572->enter($__internal_0bb2738c0efb54d4d1b3d278c69f379d3031d06af254ebea6d370fa469c7e572_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "footer"));
+        $__internal_0dd32c4efaa75a56a9fddf233feba4768bb5af772671faa9f991d2872b3d2e6c = $this->env->getExtension("native_profiler");
+        $__internal_0dd32c4efaa75a56a9fddf233feba4768bb5af772671faa9f991d2872b3d2e6c->enter($__internal_0dd32c4efaa75a56a9fddf233feba4768bb5af772671faa9f991d2872b3d2e6c_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "footer"));
 
         // line 243
         echo "</div>
@@ -440,7 +440,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </html>
 ";
         
-        $__internal_0bb2738c0efb54d4d1b3d278c69f379d3031d06af254ebea6d370fa469c7e572->leave($__internal_0bb2738c0efb54d4d1b3d278c69f379d3031d06af254ebea6d370fa469c7e572_prof);
+        $__internal_0dd32c4efaa75a56a9fddf233feba4768bb5af772671faa9f991d2872b3d2e6c->leave($__internal_0dd32c4efaa75a56a9fddf233feba4768bb5af772671faa9f991d2872b3d2e6c_prof);
 
     }
 

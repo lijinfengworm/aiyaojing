@@ -82,22 +82,26 @@
                     <div class="pull-right"><a class="btn btn-default btn-adn btn-adn-pic">添加</a></div>
                 </div>
                 <div class="pic-body">
+                    <?php foreach($images as $val){ ?>
                     <div class="col-md-3">
+                        <input type="hidden" name="image_id[]" value="<?=$val['id']?>">
+
                         <div class="box box-primary direct-chat direct-chat-primary">
                             <div class="box-header with-border">
-                                <h3 class="box-title">1</h3>
+                                <h3 class="box-title"></h3>
+				<div class="pull-left"><?php if($info['cover_image'] == $val['id']){ ?><a style='color:red'>封面</a><?php }else{ ?><a href="/images/set_cover/<?=$val['id']?>/<?=$id?>">设置封面</a><?php } ?></div>
                                 <div class="box-tools pull-right">
                                     <a class="btn btn-box-tool pic-remove" data-widget="remove"><i class="fa fa-times"></i></a>
                                 </div>
                             </div>
                             <div class="box-body">
                                 <div class="direct-chat-messages">
-
+                                    <img src="<?=CDN_ADDRESS.$val['small_image']?>" style="width: 100%;height: 100%;">
                                 </div>
                             </div>
                             <div class="box-footer">
                                 <div class="input-group">
-                                    <input type="text" name="message" placeholder="说点什么吧 ..." class="form-control">
+                                    <input type="text" name="image_abstract[]" value="<?=$val['image_abstract']?>" placeholder="说点什么吧 ..." class="form-control">
                                     <span class="input-group-btn">
                                         <button type="button" class="btn btn-primary btn-flat" data-toggle="modal" data-target=".bs-example-modal-lg">上传</button>
                                     </span>
@@ -105,6 +109,7 @@
                             </div>
                         </div>
                     </div>
+                    <?php } ?>
                 </div>
             </div>
         </form>
@@ -127,14 +132,7 @@
     </div>
 </div>
 <script type="text/javascript">
-<!-- /.content-wrapper -->
-$(function(){
-    $('#datetimepicker_mask1').datetimepicker({
-        timepicker:false,
-        format:'Y-m-d',
-        formatDate:'Y/m/d'
-    });
-    var removePic = function(){
+var removePic = function(){
         $('.pic-remove').click(function(){
             $(this).parent().parent().parent().parent().remove();
         });
@@ -162,6 +160,13 @@ $(function(){
         '                </div>'+
         '               </div>'+
         '            </div>';
+
+$(function(){
+    $('#datetimepicker_mask1').datetimepicker({
+        timepicker:false,
+        format:'Y-m-d',
+        formatDate:'Y/m/d',
+    });
     $('.btn-adn-pic').click(function(){
         $('.pic-body').append(template)
         removePic()

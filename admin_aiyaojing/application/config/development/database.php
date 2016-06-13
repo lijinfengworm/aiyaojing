@@ -96,9 +96,9 @@ $query_builder = TRUE;
 );*/
 $db['default'] = array(
     'dsn'	=> '',
-    'hostname' => '47.89.54.152',
-    'username' => 'kworm',
-    'password' => 'margin-right:4pxsolid#EEE;',
+    'hostname' => '127.0.0.1',
+    'username' => 'root',
+    'password' => '123456',
     'database' => 'yaojing',
     'dbdriver' => 'mysqli',
     'dbprefix' => 'yj_',

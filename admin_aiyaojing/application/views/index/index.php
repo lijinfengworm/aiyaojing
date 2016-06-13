@@ -44,7 +44,7 @@
                                 <td><span class="badge bg-red"><?=$val['images_num']?></span></td>
                                 <td><?=$val['add_time']?></td>
                                 <td><?=$val['show_time']?></td>
-                                <td><a class="btn btn-default btn-sm" href="">查看</a></td>
+                                <td><a class="btn btn-default btn-sm" href="/collection/add_collection/<?=$val['id']?>">查看</a></td>
                             </tr>
                             <?php } ?>
 

@@ -7,3 +7,4 @@
  */
 $config = array();
 define('STATIC_PATH','/static/');
+define('CDN_ADDRESS', 'http://admin.aiyaojing.com/');

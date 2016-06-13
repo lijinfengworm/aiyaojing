@@ -8,9 +8,11 @@
 
 class Cut_image extends CI_Controller{
     private $baseDir;
+    private $path;
     function __construct(){
         parent::__construct();
-        $this->baseDir = 'static/uploads/'.date('Ymd').'/';
+        $this->path = 'static/uploads/'.date('Ymd').'/';
+        $this->baseDir = $_SERVER['DOCUMENT_ROOT'].'/static/uploads/'.date('Ymd').'/';
         self::makeDir($this->baseDir);
         self::makeDir($this->baseDir.'original/');
         self::makeDir($this->baseDir.'medium/');
@@ -29,14 +31,14 @@ class Cut_image extends CI_Controller{
                 $tmpFile = $val['source'].$val['file_name'];
                 $newFileName = sha1($tmpFile).'.'.$extension;
                 $newImage = $this->baseDir.'original/'.$newFileName;
-                $oldImage = 'static/tmp_uploads/'.$val['file_name'];
+                $oldImage = $_SERVER['DOCUMENT_ROOT'].'/static/tmp_uploads/'.$val['file_name'];
                 rename($oldImage, $newImage);
                 $this->cutImages($newFileName,$newImage, 'medium');
                 $this->cutImages($newFileName,$newImage, 'small');
                 $newData = [
-                    'original_image' => $newImage,
-                    'medium_image' => $this->baseDir.'medium/medium_'.$newFileName,
-                    'small_image' =>  $this->baseDir.'small/small_'.$newFileName,
+                    'original_image' => $this->path.'original/'.$newFileName,
+                    'medium_image' => $this->path.'medium/'.$newFileName,
+                    'small_image' =>  $this->path.'small/'.$newFileName,
                     'add_time' => time(),
                     'source' => 'animu'
                 ];
@@ -45,8 +47,9 @@ class Cut_image extends CI_Controller{
             }
         }
     }
+
     private static function updateCollect($id){
-        return get_instance()->db->from(self::IMAGES_TABLE, ['is_cut' => 1], [ 'id' => $id ]);
+        return get_instance()->db->update(self::IMAGES_TABLE, ['is_cut' => 1], [ 'id' => $id ]);
     }
     private static function insertImage($data){
         return get_instance()->db->insert(self::IMAGES_TABLE, $data);

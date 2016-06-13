@@ -22,20 +22,20 @@ class __TwigTemplate_d855bd25e4f1304b00c75138035ed694a41379f5234426bb4a21bc87c9a
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        $__internal_b524a14689efe8e5dfaf44a70b809196cfeb82548e68935a0674b94f4930550f = $this->env->getExtension("native_profiler");
-        $__internal_b524a14689efe8e5dfaf44a70b809196cfeb82548e68935a0674b94f4930550f->enter($__internal_b524a14689efe8e5dfaf44a70b809196cfeb82548e68935a0674b94f4930550f_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle:default:detail.html.twig"));
+        $__internal_36ac4d13f07b4b99f7740e2f399aa61f7047e4751fc471593cd01f2ef3f86bbb = $this->env->getExtension("native_profiler");
+        $__internal_36ac4d13f07b4b99f7740e2f399aa61f7047e4751fc471593cd01f2ef3f86bbb->enter($__internal_36ac4d13f07b4b99f7740e2f399aa61f7047e4751fc471593cd01f2ef3f86bbb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "template", "AppBundle:default:detail.html.twig"));
 
         $this->parent->display($context, array_merge($this->blocks, $blocks));
         
-        $__internal_b524a14689efe8e5dfaf44a70b809196cfeb82548e68935a0674b94f4930550f->leave($__internal_b524a14689efe8e5dfaf44a70b809196cfeb82548e68935a0674b94f4930550f_prof);
+        $__internal_36ac4d13f07b4b99f7740e2f399aa61f7047e4751fc471593cd01f2ef3f86bbb->leave($__internal_36ac4d13f07b4b99f7740e2f399aa61f7047e4751fc471593cd01f2ef3f86bbb_prof);
 
     }
 
     // line 2
     public function block_style($context, array $blocks = array())
     {
-        $__internal_032b25c36063689d3144780e33074a0d1fea6a5f93fd7dba766f58305ad58509 = $this->env->getExtension("native_profiler");
-        $__internal_032b25c36063689d3144780e33074a0d1fea6a5f93fd7dba766f58305ad58509->enter($__internal_032b25c36063689d3144780e33074a0d1fea6a5f93fd7dba766f58305ad58509_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "style"));
+        $__internal_ec891b894226f1d8122d031812a746f6b1c67eb8fd35ff61e1427d4e22f2673d = $this->env->getExtension("native_profiler");
+        $__internal_ec891b894226f1d8122d031812a746f6b1c67eb8fd35ff61e1427d4e22f2673d->enter($__internal_ec891b894226f1d8122d031812a746f6b1c67eb8fd35ff61e1427d4e22f2673d_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "style"));
 
         // line 3
         echo "    <link href=\"";
@@ -47,15 +47,15 @@ class __TwigTemplate_d855bd25e4f1304b00c75138035ed694a41379f5234426bb4a21bc87c9a
         echo "\" rel=\"stylesheet\" type=\"text/css\" />
 ";
         
-        $__internal_032b25c36063689d3144780e33074a0d1fea6a5f93fd7dba766f58305ad58509->leave($__internal_032b25c36063689d3144780e33074a0d1fea6a5f93fd7dba766f58305ad58509_prof);
+        $__internal_ec891b894226f1d8122d031812a746f6b1c67eb8fd35ff61e1427d4e22f2673d->leave($__internal_ec891b894226f1d8122d031812a746f6b1c67eb8fd35ff61e1427d4e22f2673d_prof);
 
     }
 
     // line 7
     public function block_mainContent($context, array $blocks = array())
     {
-        $__internal_d1cf4b241ad43afe0c699a18dc99e01bed87d98788f57e4c4b1685890c03f9d0 = $this->env->getExtension("native_profiler");
-        $__internal_d1cf4b241ad43afe0c699a18dc99e01bed87d98788f57e4c4b1685890c03f9d0->enter($__internal_d1cf4b241ad43afe0c699a18dc99e01bed87d98788f57e4c4b1685890c03f9d0_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "mainContent"));
+        $__internal_ceeff3306b7b2e22076d96caea85c4fa53ee59525aa4db812db16e6173feefeb = $this->env->getExtension("native_profiler");
+        $__internal_ceeff3306b7b2e22076d96caea85c4fa53ee59525aa4db812db16e6173feefeb->enter($__internal_ceeff3306b7b2e22076d96caea85c4fa53ee59525aa4db812db16e6173feefeb_prof = new Twig_Profiler_Profile($this->getTemplateName(), "block", "mainContent"));
 
         // line 8
         echo "<div class=\"content\">
@@ -87,7 +87,7 @@ class __TwigTemplate_d855bd25e4f1304b00c75138035ed694a41379f5234426bb4a21bc87c9a
             echo "                            <li><a class=\"example-image-link\" href=\"http://admin.aiyaojing.com/";
             echo twig_escape_filter($this->env, $this->getAttribute($context["tl"], "originalImage", array(), "array"), "html", null, true);
             echo "\" data-lightbox=\"example-set\" data-title=\"";
-            echo twig_escape_filter($this->env, $this->getAttribute($context["tl"], "image_abstract", array(), "array"), "html", null, true);
+            echo twig_escape_filter($this->env, $this->getAttribute($context["tl"], "imageAbstract", array(), "array"), "html", null, true);
             echo "\"><img class=\"example-image\" src=\"http://admin.aiyaojing.com/";
             echo twig_escape_filter($this->env, $this->getAttribute($context["tl"], "mediumImage", array(), "array"), "html", null, true);
             echo "\" alt=\"\"/></a></li>
@@ -172,7 +172,7 @@ class __TwigTemplate_d855bd25e4f1304b00c75138035ed694a41379f5234426bb4a21bc87c9a
         echo "\"></script>
 ";
         
-        $__internal_d1cf4b241ad43afe0c699a18dc99e01bed87d98788f57e4c4b1685890c03f9d0->leave($__internal_d1cf4b241ad43afe0c699a18dc99e01bed87d98788f57e4c4b1685890c03f9d0_prof);
+        $__internal_ceeff3306b7b2e22076d96caea85c4fa53ee59525aa4db812db16e6173feefeb->leave($__internal_ceeff3306b7b2e22076d96caea85c4fa53ee59525aa4db812db16e6173feefeb_prof);
 
     }
 
@@ -216,7 +216,7 @@ class __TwigTemplate_d855bd25e4f1304b00c75138035ed694a41379f5234426bb4a21bc87c9a
 /*                 <div class="callbacks_container">*/
 /*                     <ul class="rslides" id="slider">*/
 /*                         {% for tl in list %}*/
-/*                             <li><a class="example-image-link" href="http://admin.aiyaojing.com/{{ tl['originalImage'] }}" data-lightbox="example-set" data-title="{{ tl['image_abstract'] }}"><img class="example-image" src="http://admin.aiyaojing.com/{{ tl['mediumImage'] }}" alt=""/></a></li>*/
+/*                             <li><a class="example-image-link" href="http://admin.aiyaojing.com/{{ tl['originalImage'] }}" data-lightbox="example-set" data-title="{{ tl['imageAbstract'] }}"><img class="example-image" src="http://admin.aiyaojing.com/{{ tl['mediumImage'] }}" alt=""/></a></li>*/
 /*                         {% endfor %}*/
 /* */
 /*                     </ul>*/

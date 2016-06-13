@@ -212,7 +212,7 @@
 <!-- Bootstrap 3.3.2 JS -->
 <script src="<?=STATIC_PATH?>plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 <!-- Morris.js charts -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>-->
 <script src="<?=STATIC_PATH?>plugins/morris/morris.min.js" type="text/javascript"></script>
 <!-- Sparkline -->
 <script src="<?=STATIC_PATH?>plugins/sparkline/jquery.sparkline.min.js" type="text/javascript"></script>
@@ -229,7 +229,7 @@
 <!-- AdminLTE App -->
 <script src="<?=STATIC_PATH?>/js/app.min.js" type="text/javascript"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="<?=STATIC_PATH?>/js/pages/dashboard.js" type="text/javascript"></script>
+<!--<script src="<?/*=STATIC_PATH*/?>/js/pages/dashboard.js" type="text/javascript"></script>-->
 <!-- AdminLTE for demo purposes -->
 <script src="<?=STATIC_PATH?>/js/demo.js" type="text/javascript"></script>
 </body>

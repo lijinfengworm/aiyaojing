@@ -5,7 +5,8 @@
  * Date: 16/3/6
  * Time: 上午11:17
  */
-
+ini_set("display_errors", "On");
+error_reporting(E_ALL | E_STRICT);
 class Collection_Data extends MY_Model{
     function __construct(){
         parent::__construct();
@@ -13,6 +14,7 @@ class Collection_Data extends MY_Model{
     const COLLECT_TABLE = 'collection';
     const IMAGE_TABLE = 'images';
     const ADMIN_USER = 'admin_user';
+    const COLLECTION_IMAGES = 'collection_images';
     function getAllCollect($page, $perPage, $extendFields = []){
         $start = ($page-1)*$perPage;
         $ret = $this->db->from(self::COLLECT_TABLE)->limit($start, $perPage)->order_by('add_time', 'DESC')->get()->result_array();
@@ -48,7 +50,7 @@ class Collection_Data extends MY_Model{
         return $list;
     }
     //插入和更新
-    function insertOrUpdateCollection($id, $title, $abstract, $cateID, $showTime, $uid){
+    function insertOrUpdateCollection($id, $title, $abstract, $cateID, $showTime, $uid, $imageID, $imageAbstract){
         $data = [
             'title' => $title,
             'abstract' => $abstract,
@@ -58,10 +60,19 @@ class Collection_Data extends MY_Model{
             'uid' =>$uid
         ];
         if($id){
-            return $this->db->update(self::COLLECT_TABLE, $data, [ 'id' => $id ]);
+            $this->db->update(self::COLLECT_TABLE, $data, [ 'id' => $id ]);
         }else{
-            return $this->db->insert(self::COLLECT_TABLE, $data);
+            $this->db->insert(self::COLLECT_TABLE, $data);
         }
+        $this->db->update(self::IMAGE_TABLE,[ 'cid' => 0 ], ['cid' => $id ]);
+        foreach($imageID as $key => $v){
+            $data = [
+                'cid' => $id,
+                'image_abstract' => isset($imageAbstract[$key]) ? trim($imageAbstract[$key]) : '',
+            ];
+            $this->db->update(self::IMAGE_TABLE, $data, ['id' => $v]);
+        }
+        return $id;
     }
     //根据ID获得合集详情
     function getCollectionDetail($id){
@@ -69,5 +80,13 @@ class Collection_Data extends MY_Model{
 
         return $result;
     }
-
+    //获得没有发布的合集
+    function getCollectionByUserNotRelease($uid){
+        $select = $this->db->from(self::COLLECT_TABLE);
+        $select->where( ['show_time > ' =>  time(), 'uid' => $uid ] );
+        return $select->get()->result_array();
+    }
+    function setCollectionCover($image_id, $cid){
+        return $this->db->update(self::COLLECT_TABLE, [ "cover_image" => $image_id ], ['id' => $cid]);
+    }
 }

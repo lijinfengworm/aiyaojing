@@ -23,7 +23,7 @@
                 <div class="callbacks_container">
                     <ul class="rslides" id="slider">
                         {% for tl in list %}
-                            <li><a class="example-image-link" href="http://admin.aiyaojing.com/{{ tl['originalImage'] }}" data-lightbox="example-set" data-title="{{ tl['imageAbstract'] }}"><img class="example-image" src="http://admin.aiyaojing.com/{{ tl['mediumImage'] }}" data-antimoderate-idata="{{ tl['base'] }}" alt=""/></a></li>
+                            <li><a class="example-image-link" href="http://admin.aiyaojing.com/{{ tl['originalImage'] }}" data-lightbox="example-set" data-title="{{ tl['imageAbstract'] }}"><img class="example-image" src="http://admin.aiyaojing.com/{{ tl['mediumImage'] }}" alt=""/></a></li>
                         {% endfor %}
 
                     </ul>
@@ -63,9 +63,4 @@
     </div>
 </div>
     <script src="{{ asset('bundles/app/js/lightbox-plus-jquery.min.js') }}"></script>
-    <script src="{{ asset('bundles/app/js/antimoderate.min.js') }}"></script>
-    <script>
-        var img = $('.example-image');
-        AntiModerate.process(img, img.getAttribute("data-antimoderate-idata"));
-    </script>
 {% endblock %}

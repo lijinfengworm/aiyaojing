@@ -54,6 +54,7 @@ class DefaultController extends MyController
 	foreach($images as &$val){
 		$val['base'] = self::base64_encode_image("../../admin_aiyaojing/".$val['mediumImage']);
 	}
+	var_dump($images);exit;
         $collection = $this->get("image_service")->getCollectionById($collect);
         $userInfo = [];
         if(!empty($collection)){
@@ -63,11 +64,11 @@ class DefaultController extends MyController
 
         return $this->render('AppBundle:default:detail.html.twig', [ 'list' => $images, 'collect' => $collection,  'cate' =>$currentCate, 'user' => $userInfo ]);
     }
-    private static function  base64_encode_image($filename='', $filetype='') {
+    private static function  base64_encode_image($filename='', $filetype='png') {
         if ($filename) {
-            $type = getimagesize($filename);
             $imgbinary = fread(fopen($filename, "r"), filesize($filename));
-            return 'data:' . $type['mime'] . ';base64,' . base64_encode($imgbinary);
+	    var_dump($imgbinary);exit;
+            return 'data:image/' . $filetype . ';base64,' . base64_encode($imgbinary);
         }
     }
 

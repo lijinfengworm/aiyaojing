@@ -8,22 +8,12 @@
 <div class="content">
     <div class="single">
         <div class="single-top">
-            <script src="{{ asset('bundles/app/js/responsiveslides.min.js') }}"></script>
-            <script>
-                $(function (jq) {
-                    jq("#slider").responsiveSlides({
-                        auto: true,
-                        speed: 500,
-                        namespace: "callbacks",
-                        pager: true
-                    });
-                })(jQuery);
-            </script>
+            
             <div class="slider">
                 <div class="callbacks_container">
-                    <ul class="rslides" id="slider">
+                    <ul class="rslides">
                         {% for tl in list %}
-                            <li><a class="example-image-link" href="http://admin.aiyaojing.com/{{ tl['originalImage'] }}" data-lightbox="example-set" data-title="{{ tl['imageAbstract'] }}"><img class="example-image" src="http://admin.aiyaojing.com/{{ tl['mediumImage'] }}" alt=""/></a></li>
+                            <li><a href="http://admin.aiyaojing.com/{{ tl['originalImage'] }}" target="_blank"><img class="example-image" src="http://admin.aiyaojing.com/{{ tl['mediumImage'] }}" alt="{{ tl['imageAbstract'] }}"/></a></li>
                         {% endfor %}
 
                     </ul>

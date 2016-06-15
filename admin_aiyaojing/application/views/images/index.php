@@ -35,7 +35,7 @@
                                             <a class="btn btn-normal add-collection" data-id="<?=$v['id']?>">添加到合集</a>
                                         </div>
                                         <div class="pull-right">
-                                            <a class="btn btn-normal delete-image" data-id="<?=$v['id']?>"></a>
+                                            <a class="btn btn-normal delete-image" data-id="<?=$v['id']?>">删除</a>
                                         </div>
                                     </div>
 

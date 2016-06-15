@@ -41,7 +41,7 @@
     <![endif]-->
 </head>
 <body class="skin-blue sidebar-mini">
-    <div class="wrapper">
+    <div class="wrapper" style="min-height: 972px;">
 
         <header class="main-header">
             <!-- Logo -->

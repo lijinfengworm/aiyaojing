@@ -8,20 +8,25 @@
 <div class="content">
     <div class="single">
         <div class="single-top">
-            
-            <div class="slider">
+		<h2>{{ collect[0]['title'] }}</h2>
+            <p class="para">{{ collect[0]['abstract'] }}</p>
+
+                     <div class="slider">
                 <div class="callbacks_container">
-                    <ul class="rslides">
+                    <ul class="slides detail">
                         {% for tl in list %}
-                            <li><a href="http://admin.aiyaojing.com/{{ tl['originalImage'] }}" target="_blank"><img class="example-image" src="http://admin.aiyaojing.com/{{ tl['mediumImage'] }}" alt="{{ tl['imageAbstract'] }}"/></a></li>
+                            <li>
+				<a  href="http://admin.aiyaojing.com/{{ tl['originalImage'] }}" target="_blank">
+					<img class="example-image" src="http://admin.aiyaojing.com/{{ tl['mediumImage'] }}" alt=""/>
+					<p>{{ tl['imageAbstract'] }}</p>
+				</a>
+			   </li>
                         {% endfor %}
 
                     </ul>
                 </div>
             </div>
 
-            <h2>{{ collect[0]['title'] }}</h2>
-            <p class="para">{{ collect[0]['abstract'] }}</p>
 
         </div>
         <div class="single-in">

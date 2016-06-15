@@ -414,7 +414,7 @@ ul.callbacks_tabs.callbacks1_tabs {
 }
 .projects h3,.info h3,.tags h3,.gallery h3,.feature h3{
 	color:#000;
-	font-size:1.8em;
+	font-size:1.2em;
 	font-weight:300;
 	padding: 0 0 0.7em;
 }
@@ -433,7 +433,7 @@ ul.likes li{
 	padding: 0.3em 0;
 }
 ul.likes li a,ul.likes li span{
-	font-size:1em;
+	font-size:0.8em;
 	color:#848484;
 	margin: 0 0 0.5em;
 	display: block;
@@ -891,25 +891,30 @@ a.just-do:hover {
   margin: 1.5em;
 }
 .single-top {
+  float: left;
+  width: 80.9%;
   border-right: 1px solid #D5D3D3;
   padding: 0 2% 0 0;
 }
-.single-top, .single-in {
+
+/*.single-top, .single-in {
   float: left;
   width: 47.9%;
-}
+}*/
 .single-in {
+  float: left;
+  width: 14.8%;
   padding: 0 0 0 2%;
 }
 .single-top h2 {
   color: #000;
-  font-size: 1.8em;
+  font-size: 1.2em;
   font-weight: 300;
   padding: 0.5em 0;
 }
 .single-top p {
   color: #a3a3a3;
-  font-size: 1.1em;
+  font-size: 1em;
   line-height: 1.7em;
   font-weight: 300;
   padding: 0 0 1em;
@@ -2067,4 +2072,21 @@ h4.author {
 .map iframe {
   min-height: 569px;
 }
+}
+.callbacks_container .detail{
+  text-align:center;
+}
+.callbacks_container .detail li{
+ margin-bottom:50px;
+ display:inline-block;
+}
+.callbacks_container .detail li p{
+  font-size:1em;
+  color:#383434;
+}
+.callbacks_container ul img{
+ clear:both;
+ margin:auto;
+ max-width: 100%;
+ display: block;
 }

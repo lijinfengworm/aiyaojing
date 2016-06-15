@@ -22,7 +22,7 @@ class Collection_Images extends MY_Model{
     function getImagesByCollectionID($cid){
 	if($cid){
         //$select = $this->db->from(self::COLLECTION_IMAGES)->join(self::IMAGES_TABLE, self::COLLECTION_IMAGES.'.image_id = '.self::IMAGES_TABLE.'.id',  'left')->where([ self::COLLECTION_IMAGES.".cid = " => $cid ]);
-	        $select = $this->db->from(self::IMAGES_TABLE)->where([ "cid = " => $cid ]);
+	        $select = $this->db->from(self::IMAGES_TABLE)->where([ "cid" => $cid ]);
         	return $select->get()->result_array();
 	}
 	return [];

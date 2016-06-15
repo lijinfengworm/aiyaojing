@@ -50,7 +50,7 @@ class Images extends MY_Controller{
     }
     function delete_image(){
         $id = $this->input->post('image_id');
-        $ret = $this->Image_Data->deleteImage($id);
+        $ret = $this->Images_Data->deleteImage($id);
         if($ret){
             die(json_encode( ['code' => 1] ));
         }else{

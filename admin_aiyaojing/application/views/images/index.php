@@ -125,7 +125,7 @@
             var id = $(this).data('id');
             $.ajax({
                 type: "POST",
-                url: "/images/delete_image"
+                url: "/images/delete_image",
                 data: {'image_id': id},
                 success: function(s){
                     var obj = $.parseJSON(s);

@@ -48,4 +48,13 @@ class Images extends MY_Controller{
         }
         redirect("/collection/add_collection/$cid");
     }
+    function delete_image(){
+        $id = $this->input->post('image_id');
+        $ret = $this->Image_Data->deleteImage($id);
+        if($ret){
+            die(json_encode( ['code' => 1] ));
+        }else{
+            die(json_encode( ['code' => 0] ));
+        }
+    }
 }

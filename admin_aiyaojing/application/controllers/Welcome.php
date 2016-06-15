@@ -11,7 +11,16 @@ class Welcome extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('welcome_message');
+        if(DataFormat::isPost()) {
+            $username = $this->input->post('username');
+            $password = $this->input->post('password');
+            $ret = $this->Admin_User->login($username, $password);
+
+            if($ret){
+                redirect('/index/index');
+            }
+        }
+        $this->load->view('login/login');
 	}
     public function login(){
         if(DataFormat::isPost()) {

@@ -35,7 +35,7 @@
                                             <a class="btn btn-normal add-collection" data-id="<?=$v['id']?>">添加到合集</a>
                                         </div>
                                         <div class="pull-right">
-                                            <a href=""></a>
+                                            <a class="btn btn-normal delete-image" data-id="<?=$v['id']?>"></a>
                                         </div>
                                     </div>
 
@@ -120,6 +120,20 @@
                 }
             });
 
+        });
+        $('.delete-image').click(function(){
+            var id = $(this).data('id');
+            $.ajax({
+                type: "POST",
+                url: "/images/delete_image"
+                data: {'image_id': id},
+                success: function(s){
+                    var obj = $.parseJSON(s);
+                    if(obj['code'] == 1){
+                        location.reload();
+                    }
+                }
+            });
         });
     });
 </script>

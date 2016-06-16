@@ -17,7 +17,7 @@
                     </div>
                     <div class="blog-in">
                         <h5><a href="/detail?cate={{ cate }}&collect={{ lt['id'] }} ">{{ lt['title'] }}</a></h5>
-                        <p>{{ lt['abstract'] }}</p>
+                        <p>{{ lt['abstract']|length < 30 ? lt['abstract'] : lt['abstract']|slice(0,30) ~ '...' }}</p>
                         <ul class="date">
                             {#<li><span><a href="/detail?cate={{ cate }}&collect={{ lt['id'] }} "><i ></i>12 Comments</a></span></li>#}
                             <li><span><i class="date-in"></i>{{ lt["showTime"]|date("m-d H:i") }}</span></li>
